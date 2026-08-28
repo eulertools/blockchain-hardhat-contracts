@@ -1,0 +1,22 @@
+{
+  "name": "matictest",
+  "rpc": "https://rpc-mumbai.maticvigil.com",
+  "network_id": 80001,
+  "neo4j": {
+      "nameToken": "Token",
+      "namePool": "Pool"
+  },
+  "migrations": {
+      "tokens": false,
+      "example_tokens": false,
+      "oracle": false,
+      "dexagregator": false,
+      "marketplace": false,
+      "subscription_center": false,
+      "info_tokens": false
+  },
+  "tokens": {},
+  "pools": {},
+  "products": {},
+  "dex":[]
+}

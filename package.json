@@ -1,0 +1,36 @@
+{
+  "name": "blockchain-hardhat-contracts",
+  "version": "1.0.0",
+  "description": "contracts-hardhat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eulertools/blockchain-hardhat-contracts.git"
+  },
+  "author": "euler-tools",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eulertools/blockchain-hardhat-contracts/issues"
+  },
+  "homepage": "https://github.com/eulertools/blockchain-hardhat-contracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
+    "@types/node": "^18.11.9",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.1"
+  },
+  "compilerOptions": {
+    "moduleResolution": "node"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "aws-amplify": "^4.3.43",
+    "dotenv": "^16.0.3"
+  }
+}

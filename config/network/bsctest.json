@@ -1,0 +1,167 @@
+{
+  "name": "bsctest",
+  "rpc": "https://data-seed-prebsc-1-s1.binance.org:8545",
+  "blocks_per_day": "28880",
+  "network_id": 97,
+  "neo4j": {
+      "nameToken": "TestnetToken",
+      "namePool": "TestnetPool"
+  },
+  "migrations": {
+      "tokens": false,
+      "multisig": true,
+      "example_tokens": false,
+      "oracle": false,
+      "dexagregator": false,
+      "marketplace": false,
+      "subscription_center": false,
+      "exchange_liquidity": false,
+      "info_tokens": false,
+      "locker": false,
+      "pool_info_weth": false,
+      "guestbook": false,
+      "erc1155_managed": false
+  },
+  "tokens": {
+      "whitelist": [
+          "0xae13d989dac2f0debff460ac112a837c89baa7cd",
+          "0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684",
+          "0x8babbb98678facc7342735486c851abd7a0d17ca",
+          "0x78867bbeef44f2326bf8ddd1941a4439382ef2a7",
+          "0x8a9424745056eb399fd19a0ec26a14316684e274"
+      ],
+      "ETH": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "WETH": "0xae13d989dac2f0debff460ac112a837c89baa7cd",
+      "EULER": "0x5a077457e7a17f828c7c81fb387615ed785e66ba",
+      "OEULER": "0x4e51d810015227fbe24aad99acf8cc82819e73ed",
+      "TEST": "0xa037C562d8A5914F9e314EFa5308e1f8E3BAd1Ac",
+      "USDT": "0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684",
+      "FEES_TEST": "0x197c841420a0aa4b7a43aac245b01faeaf3cedf8",
+      "USDC": "0x9e7f6e088260b9f0ec2680c4fa71b738ec33101b",
+      "DAI": "0xba15367021461f6d1b03a10baaf60086171452e6",
+      "NFT_ERC1155": "0xbbcaf70109fdd522baa0b47d34dd45ddf632c371",
+      "TAX": "0xaef86bd087f9079b63837ce4f075581fad3cc8a9",
+      "UNSALEABLE": "0x6881ccccaf20e16d677d75d0f3507906b8758d43",
+      "NFT": "0x6609ccda0fc45043f6ce9544f8fdade6b26b0a9b",
+      "GUESTBOOK_ERC1155_V2": "0x09d07ab0f4ced217fdec6ed4506c587655e940f4",
+      "OEULER2": "0xa0d4d42dd22bb583e29fe8bf9a71f3ae1d7a3827"
+  },
+  "pools": {
+      "OEULER": [
+          "0xdb64d212ca1cfbd97ed8ae6b667c55a55d67119a"
+      ]
+  },
+  "products": {
+      "treasury": "0x4a9e0fcdd826af2b235c69fc4e2ee03cdbb82632",
+      "staking": "0x79ae145bcd504a13c8e76cf2ee7397088be1c4cc",
+      "oracle": {
+          "version": "1.0.1",
+          "dapp": "0x3d92c0149b61f0f58afb062c9f9fffb968e6a679",
+          "storage": "0xeca37cf15c20a11b7336d865d48ef3d25fe0f375"
+      },
+      "token_migration": {
+          "dapp": "0xc1e4229284b9ef4b613399133a2d2d170c443bb0"
+      },
+      "subscription_adapter": "0xdab1454e0ba036c86a71ad6bb6d9fb4b07a9fa9a",
+      "factory": {
+          "create_pair_library": "0x5a6a49a9b4482ebf029aa49d294fcb9db7e2d186",
+          "liquidity_library": "0x0ba7eb0068d753eed7ce6da3a0edd3e486a7f9fe"
+      },
+      "oracle_offchain": "0xf9f1cd3b2df68c0a416a9bff187797591e2da9a1",
+      "dexagregator": {
+          "subscription_adapter": "0x52beb7c50617066d0e14b1c77d1c0226135352ca",
+          "storage": "0x5d017e44c695907035228f323c075e48b834834d",
+          "proxy": "0x37f3c9533852fe37c486be29013817140935701b",
+          "library": "0xeba4c587af506d71e9c714df61a7ee84716212ba",
+          "proxys": {
+              "pancake": "0x1e0a58ed2c9b83e7ac8fd436e149124c098e69b2",
+              "bakery": "0x58dd70c152001825c6c3515af3896d1f81acfd40",
+              "every": "0x7539e6a6fd42d7b6d3bad95e03e32e7629421f06"
+          },
+          "dapp": "0x776cc9e3d0cedc6602991ee2ea1556332e046d32"
+      },
+      "marketplace": {
+          "storage": "0x34a0d500513e1db99c09dae7e388efe927a72dec",
+          "proxy": "0xb8bdb88ab7ca5f86b9b89be395c4dade3df0a85c",
+          "default_Implemented": "0xdfcafff31dac75415e3f126de792c56ba6ec6bdb",
+          "public_sale": "0xafa3ec6333cd403c69dc69ea610f4374278d4c71",
+          "private_sale": "0x8c3d741a48e9ff3c7c037f292663040322a8c1f6",
+          "locked_public_sale": "0x29fe7061e381afca421b88ed6d49761188828fc8",
+          "locked_private_sale": "0x3ac642c040756d35233e695caba97051fc227df5",
+          "secure_send": "0xa8b8d3b0fd43664ee19d26e9b7dc8ac0a2de8e5a",
+          "public_sale_erc721": "0x50861ad4cf3bf34ddc12ed15743e6e40e12a864f",
+          "private_sale_erc721": "0x9bf4b8a8f4c2478d007cf21fd34f7c4afac4035b",
+          "public_sale_erc1155": "0x07d0cea164cb93090199ceca8fc4bced8d975d17",
+          "private_sale_erc1155": "0xb9ebf994dd4ef79b05e9487cd87c9197ad5a839d",
+          "donation": "0xc4fd09135401dfa8371311fda9ea7670698f2837"
+      },
+      "subscription_center": {
+          "nft": "0x55390a9ba0761135efc00d0e51b24669f8ef3a36",
+          "ticket_storage": "0xe16aec175c6c0759328df320c358a96ab7f15df0",
+          "ticket_proxy": "0x6a57ae48d09086e74f061db5b23670867b035943",
+          "ticket_dapp": "0x4a0debd78698acd9d622eb378b4dc176dbb0307c",
+          "storage": "0x1c2a40cdcd3b374b6ccb59a91039fbdfcce7f15d",
+          "proxy": "0x8bb5fa4fbba039be3776a5b8b6fed3ad1f82c020",
+          "dapp": "0x0381f9be80d7ef9f7adf5b9faa067c1f6d9198da"
+      },
+      "token_fee_detector": "0x519aef54a67164ab37cb9ff13fe9e9e67eecf61e",
+      "globalStorage": "0xe34abf9ac39ab81bef3c93438c2e60c11014bbec",
+      "exchange_liquidity": "0xb12e79c546d1453dc2a2b274934f722e1165058e",
+      "safe_transfer_library": "0xe91bea10cfdbfe4c2dfc36000afa8b528379e5e9",
+      "info_tokens": "0xee556ff4e464601bfbebc2a56a4a7da10624438e",
+      "multisend": "0x460F4FaaF40888eE028c471ca4d09dA5115A212A",
+      "pool_info_weth": "0x4374c0a9163ea1b65da7746fd610a2dc29b95764",
+      "guestbook_verifier": "0x6c2840384d43f3d5b4e5accdb05c39e07cbd3691",
+      "guestbook": {
+          "token": "0x4df88e9f6083572fb0cf59510299a1277928df30",
+          "factory": "0x874382554e8e25ddd3824f30360e4a49e148a0aa"
+      },
+      "erc1155_managed": {
+          "proxy": "0x9881481df34974c2cb17157ae3c3cd209831707f",
+          "token": "0xce07e4b02e38cfdffc2499d37b5bcd4a73daf0e6"
+      },
+      "manager_tax": {
+          "dapp": "0xa3ad496e7d13eabaa2fb294fa08e44bf9f78cffc",
+          "proxy": "0x182efdded72aca92dc7e7fb886028246199a1190"
+      },
+      "locker": {
+          "dapp": "0x60c209a86c93c9b0aa7ee48f71a1db7ced3f9462",
+          "proxy": "0x19ce890967d8e1b9f747dc8a6a56943ded26a3ae"
+      },
+      "euler": {
+          "token": "0x0f32866670ac7be928be310e502ba3bc0bcddd3e",
+          "proxy": "0x5a077457e7a17f828c7c81fb387615ed785e66ba"
+      },
+      "multisig": {
+          "factory": "0x536c83d7951e915f6e9ff44a8e61cfb7ba2bdac3",
+          "proxy": "0x8c7316faa290441924b96fa365bcbfb9d9bbba35",
+          "dapp": "0x288b246e2a35bbdc70ca5d08a2b31cfc8ad2999d"
+      }
+  },
+  "dex": [
+      {
+          "name": "Pancake Swap",
+          "factory": "0xb7926c0430afb07aa7defde6da862ae0bde767bc",
+          "fees": "998",
+          "proxy": "pancake",
+          "percentage": "1000",
+          "deploy": true
+      },
+      {
+          "name": "Bakery Swap",
+          "factory": "0x01bf7c66c6bd861915cdaae475042d3c4bae16a7",
+          "fees": "997",
+          "proxy": "bakery",
+          "percentage": "1000",
+          "deploy": true
+      },
+      {
+          "name": "Euler Swap",
+          "factory": "0x1f006e3592a63acee5c95d65aa421fe3de31e374",
+          "fees": "999",
+          "proxy": "pancake",
+          "percentage": "1000",
+          "deploy": true
+      }
+  ]
+}
