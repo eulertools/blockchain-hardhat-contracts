@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
-    "aws-amplify": "^4.3.43",
+    "aws-amplify": "^6.20.0",
     "dotenv": "^16.0.3"
   }
 }
